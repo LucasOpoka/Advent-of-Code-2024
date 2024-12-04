@@ -28,7 +28,6 @@ int main(void)
 	{
 		for (int c = 0; c < vec[r].size(); c++)
 		{
-			std::cout << vec[r][c];
 			res +=	theMeaningOfChristmas(vec, r, c, -1, 0, 0) +
 					theMeaningOfChristmas(vec, r, c, 1, 0, 0) +
 					theMeaningOfChristmas(vec, r, c, 0, -1, 0) +
@@ -39,7 +38,6 @@ int main(void)
 					theMeaningOfChristmas(vec, r, c, -1, 1, 0);
 
 		}
-		std::cout << "\n";
 	}
 
 	std::cout << res << "\n";
